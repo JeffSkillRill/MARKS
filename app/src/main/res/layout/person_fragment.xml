@@ -10,7 +10,7 @@
         android:id="@+id/text_subject_name_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Imie Nazwisko"
+        android:text="Name Surname"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
