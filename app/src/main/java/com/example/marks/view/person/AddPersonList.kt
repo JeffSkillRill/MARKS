@@ -32,7 +32,7 @@ class AddPersonList : Fragment() {
         _viewModel = ViewModelProvider(this).get(AddPersonListViewModel::class.java)
         _viewModel.setSubject(args.subjectID)
         _viewManager = LinearLayoutManager(requireContext())
-        _adapter = AddPersonListAdapter(_viewModel.getList(args.subjectID), _viewModel)
+        ///_adapter = AddPersonListAdapter(_viewModel.getList(args.subjectID), _viewModel)
         _viewModel.allStudentsNotOnThisSubject.observe(viewLifecycleOwner, Observer{_adapter.notifyDataSetChanged()
         })
         return inflater.inflate(R.layout.add_student_list_fragment, container, false)
